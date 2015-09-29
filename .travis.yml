@@ -6,4 +6,15 @@ rvm:
  - rbx
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
+
+deploy:
+provider: cloudfoundry
+target: https://api.de.a9s.eu
+username: john.doe@example.com
+password:
+secure: your encryped password determined by the travis gem=
+organization: john_doe_example_com
+space: hell
+on:
+repo: anynines/ruby-sinatra-example-app
  
